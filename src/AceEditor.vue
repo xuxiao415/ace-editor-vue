@@ -152,7 +152,7 @@ export default {
     }
   },
   watch: {
-    value: function(val) {
+    value: function() {
       // 只有外部改变时，才去更新编辑器的值
       if (this.aceEditor && !this.internalChange) {
         this.aceEditor.setValue(this.value)

@@ -1,13 +1,30 @@
 {
   "name": "ace-editor-vue",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "private": false,
+  "author": "xuxiao415<xuxiao415@foxmail.com>",
+  "description": "ace editor component for vue",
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "ace-editor",
+    "ace",
+    "ace-editor-vue"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xuxiao415/ace-editor-vue.git"
+  },
+  "main": "lib/ace-editor.common.js",
+  "module": "lib/ace-editor.umd.min.js",
   "scripts": {
-    "serve": "ace-editor-vue/node_modules/.bin/vue-cli-service serve",
-    "build": "ace-editor-vue/node_modules/.bin/vue-cli-service build",
-    "lint": "ace-editor-vue/node_modules/.bin/vue-cli-service lint"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build-lib": "vue-cli-service build --target lib --inline-vue --name ace-editor --dest lib ./src/index.js",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "ace-builds": "^1.4.12",
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },
@@ -18,6 +35,8 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "sass": "^1.32.2",
+    "sass-loader": "^10.1.0",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
