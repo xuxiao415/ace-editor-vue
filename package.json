@@ -1,0 +1,48 @@
+{
+  "name": "ace-editor-vue",
+  "version": "1.0.6",
+  "description": "ace editor for vue",
+  "main": "dist/ace-editor.umd.js",
+  "module": "dist/ace-editor.esm.js",
+  "unpkg": "dist/ace-editor.min.js",
+  "browser": {
+    "./sfc": "src/ace-editor.vue"
+  },
+  "repository": "https://github.com/xuxiao415/ace-editor-vue.git",
+  "author": "xuxiao415 <xuxiao415@foxmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run build:umd & npm run build:es & npm run build:unpkg",
+    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/ace-editor.umd.js",
+    "build:es": "rollup --config build/rollup.config.js --format es --file dist/ace-editor.esm.js",
+    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/ace-editor.min.js",
+    "lint": "eslint --fix --ext .js,.vue src",
+    "build:publish": "npm run build & npm publish"
+  },
+  "files": [
+    "dist/*",
+    "src/**"
+  ],
+  "dependencies": {
+    "ace-builds": "^1.4.12",
+    "element-ui": "^2.14.1",
+    "vue": "^2.6.12"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.16",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-buble": "^0.21.3",
+    "@rollup/plugin-commonjs": "^11.1.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "babel-plugin-component": "^1.1.1",
+    "babel-preset-env": "^7.0.0-beta.3",
+    "eslint": "^7.16.0",
+    "eslint-plugin-vue": "^7.4.0",
+    "rollup": "^1.17.0",
+    "rollup-plugin-filesize": "^9.1.1",
+    "rollup-plugin-vue": "^5.0.1",
+    "sass": "^1.30.0",
+    "sass-loader": "^10.1.0",
+    "vue-template-compiler": "^2.6.12"
+  }
+}
