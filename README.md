@@ -36,7 +36,3 @@ export default {
 
 ## License
 MIT
-
-## Keywords
-
-Ace editor, vue2
