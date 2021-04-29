@@ -1,6 +1,7 @@
 {
   "name": "ace-editor-vue",
   "version": "1.0.7",
+  "keywords": ["ace", "ace editor", "ace editor vue2", "vue2", "vue"],
   "description": "ace editor for vue",
   "main": "dist/ace-editor.umd.js",
   "module": "dist/ace-editor.esm.js",
