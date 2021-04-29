@@ -16,8 +16,7 @@
     "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/ace-editor.umd.js",
     "build:es": "rollup --config build/rollup.config.js --format es --file dist/ace-editor.esm.js",
     "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/ace-editor.min.js",
-    "lint": "eslint --fix --ext .js,.vue src",
-    "build:publish": "npm run build & npm publish"
+    "lint": "eslint --fix --ext .js,.vue src"
   },
   "files": [
     "dist/*",
